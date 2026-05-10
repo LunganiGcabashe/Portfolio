@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe33c750fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="images/logo1-removebg-preview.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Lungani</span> <br>Gcabashe From South Africa</h1>
+                <p>Front-End Developer</p>
+                <p>I create user-friendly, responsive websites designed to bring ideas to life.
+                <br>Explore my work or feel free to reach out!</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-----------------------------About------------------------->
+
+    <div id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpeg" >
+                </div>
+
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    I’m an aspiring software developer with a strong interest in technology, design, and problem-solving. I enjoy turning ideas into real, working solutions and constantly look for ways to improve my skills. Whether I’m coding a website or learning a new tool, I’m committed to growing and staying curious in everything I do. I'm driven by progress and the opportunity to build things that make a difference.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Eductaion</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Java, JavaScript, SQL</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Responsive Web Design</li>
+                            <li><span>Computer Science Fundamentals</span><br>Data Structures & Algorithms, Computer Networking</li>
+                            <li><span>Soft Skills</span><br>Problem-Solving, Time Management, Adaptability, Collaboration, Attention to Detail, Planning & Organising, Interpersonal Skills</li>
+                            <li><span>Computer Science Fundamentals</span><br>Data Structures & Algorithms, Computer Networking</li>
+                            <li><span>Additional Skills</span><br> Mathematical Reasoning, General Computer Literacy, Research Skills</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1st July - 31st July, 2025</span><br>Internship Program - Prodigy InfoTech</li>
+                            <li><span>Web Development</span><br>Developed Weather App, Portfolio Website, Responsive Menu, Tic Tac Toe Game and Stopwatch App</li>
+                            <li><span>Tools</span><br>HTML, CSS, JavaScript, Visual Studio</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Feb 2025 - Dec 2025</span><br>BSc Honours in Computer Science, University of Zululand</li>
+                            <li><span>Feb 2021 - Nov 2024</span><br>BSc in Computer Science and Physics, University of Zululand</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------------Projects------------------------->
+    <div id="projects">
+        <div class="container">
+             <h1 class="sub-title pro">Projects</h1>
+
+            <div class="projects-container">
+
+                <div class="project-list">
+                    <img src="images/portfolio.png">
+                    <h3>Portfolio</h3>
+                    <p> A personal portfolio website that showcases my skills, projects, and accomplishments as a web developer</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <img src="images/stopwatch.png">
+                    <h3>Stopwatch</h3>
+                    <p>A stopwatch web application for starting, pausing, and resetting the stopwatch, as well as tracking and displaying lap times, users can accurately measure and record time intervals.</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <img src="images/weatherapp.png">
+                    <h3>Weather App</h3>
+                    <p>A web page that fetches weather data from a weather API based on the user's location or a user-inputted location</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <img src="images/tictactoe.png">
+                    <h3>Tic Tac Toe</h3>
+                    <p>A tic tac toe web application to handle user clicks, track game state, and check for winning conditions</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <img src="images/menubar.png">
+                    <h3>Menu</h3>
+                    <p>An interactive navigation menu that changes color or style when scrolled or when hovering over a menu item.</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <img src="images/unizulu.jpg">
+                    <h3>University Student Assistance</h3>
+                    <p>A tool to help students manage schedules, resources, and communications.</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------Contact------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>lunganil804@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0793312671</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/lungani.lurh.509"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/LunganiGcabashe"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gcabashel/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/27793312671
+                        "><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+
+                    <a href="CV/CV_Lungani Gcabashe.pdf" download="" class="btn btn2" >Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ Lungani. <i class="fa-solid fa-heart"></i>Responsice Portfolio</p>
+        </div>
+    </div>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

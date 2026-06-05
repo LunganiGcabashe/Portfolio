@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
+    <title>Lungani Gcabashe | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fe33c750fb.js" crossorigin="anonymous"></script>
 </head>
@@ -15,10 +14,10 @@
 
             <nav>
                 <img src="images/logo1-removebg-preview.png" class="logo">
-
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -27,131 +26,118 @@
             </nav>
 
             <div class="header-text">
-                <h1>Hi, I'm <span>Lungani</span> <br>Gcabashe From South Africa</h1>
-                <p>Front-End Developer</p>
-                <p>I create user-friendly, responsive websites designed to bring ideas to life.
-                <br>Explore my work or feel free to reach out!</p>
+                <p class="header-greeting">Hi, I'm</p>
+                <h1><span>Lungani Gcabashe</span></h1>
+                <p class="header-role">Software Developer & Data Analyst</p>
+                <p class="header-summary">
+                    Full-stack developer and data analyst with a BSc Honours in Computer Science.<br>
+                    Microsoft certified in Azure and Power BI. Currently building real-world systems at Hulamin.
+                </p>
+                <div class="header-actions">
+                    <a href="#projects" class="btn btn-primary-hero">View My Work</a>
+                    <a href="#contact" class="btn btn-outline-hero">Get In Touch</a>
+                </div>
             </div>
-            
+
         </div>
     </div>
 
-    <!-----------------------------About------------------------->
-
+    <!-- About -->
     <div id="about">
         <div class="container">
-
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/about.jpeg" >
+                    <img src="images/Lungani.jpeg">
                 </div>
-
                 <div class="about-col-2">
                     <h2 class="sub-title">About Me</h2>
-                    I’m an aspiring software developer with a strong interest in technology, design, and problem-solving. I enjoy turning ideas into real, working solutions and constantly look for ways to improve my skills. Whether I’m coding a website or learning a new tool, I’m committed to growing and staying curious in everything I do. I'm driven by progress and the opportunity to build things that make a difference.</p>
+                    <p>I'm a software developer and data analyst with a BSc Honours degree in Computer Science from the University of Zululand. I enjoy building full-stack systems, analysing data, and turning ideas into working solutions. I am currently completing a structured industry internship at Hulamin via Gijima, where I am building a full-stack Project Management System using C# and .NET, and developing Power BI dashboards for business reporting.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Eductaion</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span><br>Python, Java, JavaScript, SQL</li>
-                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Responsive Web Design</li>
-                            <li><span>Computer Science Fundamentals</span><br>Data Structures & Algorithms, Computer Networking</li>
-                            <li><span>Soft Skills</span><br>Problem-Solving, Time Management, Adaptability, Collaboration, Attention to Detail, Planning & Organising, Interpersonal Skills</li>
-                            <li><span>Computer Science Fundamentals</span><br>Data Structures & Algorithms, Computer Networking</li>
-                            <li><span>Additional Skills</span><br> Mathematical Reasoning, General Computer Literacy, Research Skills</li>
+                            <li><span>Languages</span><br>C#, Python, Java, JavaScript, SQL, HTML, CSS</li>
+                            <li><span>Frameworks & Backend</span><br>ASP.NET Core Web API, ASP.NET Core MVC, DevExpress MVC, REST API Development, Clean Architecture</li>
+                            <li><span>Data & Analytics</span><br>Power BI, Pandas, Matplotlib, Google Colab, Jupyter Notebook, NLP Preprocessing, Data Cleaning, Data Visualisation</li>
+                            <li><span>DevOps & Cloud</span><br>Azure DevOps, Azure Pipelines, CI/CD, Git, GitHub, xUnit Testing, Playwright E2E Testing</li>
+                            <li><span>Databases</span><br>Oracle SQL, SQL, Data Modelling</li>
+                            <li><span>Soft Skills</span><br>Problem-Solving, Team Collaboration, Communication, Time Management, Documentation, Research</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>1st July - 31st July, 2025</span><br>Internship Program - Prodigy InfoTech</li>
-                            <li><span>Web Development</span><br>Developed Weather App, Portfolio Website, Responsive Menu, Tic Tac Toe Game and Stopwatch App</li>
-                            <li><span>Tools</span><br>HTML, CSS, JavaScript, Visual Studio</li>
+                            <li>
+                                <span>Apr 2026 - Present</span><br>
+                                Intern Developer — Gijima, placed at Hulamin (Pietermaritzburg)
+                            </li>
+                            <li>
+                                <span>What I built</span><br>
+                                Full-stack internal Project Management System — Oracle SQL database, C# ASP.NET Core REST APIs following Clean Architecture, ASP.NET Core MVC frontend with DevExpress UI components, unit tests with xUnit, E2E tests with Playwright, and Azure DevOps CI/CD pipelines for automated builds and deployment
+                            </li>
+                            <li>
+                                <span>Reporting</span><br>
+                                Developed Power BI dashboards providing management with visual insights into project status, priorities, and team progress
+                            </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Feb 2025 - Dec 2025</span><br>BSc Honours in Computer Science, University of Zululand</li>
-                            <li><span>Feb 2021 - Nov 2024</span><br>BSc in Computer Science and Physics, University of Zululand</li>
+                            <li>
+                                <span>2025</span><br>
+                                BSc Honours in Computer Science — University of Zululand (73%)
+                            </li>
+                            <li>
+                                <span>2021 - 2024</span><br>
+                                BSc in Computer Science & Physics — University of Zululand (65%)
+                            </li>
+                            <li>
+                                <span>2026</span><br>
+                                Gijima Data Science Internship Programme — covering Data Science, Python, SQL, Power BI, and Microsoft Azure with workplace placement at Hulamin
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-----------------------------Projects------------------------->
-    <div id="projects">
+    <!-- Certifications -->
+    <div id="certifications">
         <div class="container">
-             <h1 class="sub-title pro">Projects</h1>
+            <h2 class="sub-title cert-title">Certifications</h2>
+            <div class="cert-container">
 
-            <div class="projects-container">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+                    <div class="cert-info">
+                        <h3>AZ-900</h3>
+                        <p>Microsoft Azure Fundamentals</p>
+                        <span>Microsoft</span>
+                    </div>
+                </div>
 
-                <div class="project-list">
-                    <img src="images/portfolio.png">
-                    <h3>Portfolio</h3>
-                    <p> A personal portfolio website that showcases my skills, projects, and accomplishments as a web developer</p>
-                    <div class="languages">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+                    <div class="cert-info">
+                        <h3>DP-900</h3>
+                        <p>Microsoft Azure Data Fundamentals</p>
+                        <span>Microsoft</span>
                     </div>
                 </div>
-                <div class="project-list">
-                    <img src="images/stopwatch.png">
-                    <h3>Stopwatch</h3>
-                    <p>A stopwatch web application for starting, pausing, and resetting the stopwatch, as well as tracking and displaying lap times, users can accurately measure and record time intervals.</p>
-                    <div class="languages">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="project-list">
-                    <img src="images/weatherapp.png">
-                    <h3>Weather App</h3>
-                    <p>A web page that fetches weather data from a weather API based on the user's location or a user-inputted location</p>
-                    <div class="languages">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="project-list">
-                    <img src="images/tictactoe.png">
-                    <h3>Tic Tac Toe</h3>
-                    <p>A tic tac toe web application to handle user clicks, track game state, and check for winning conditions</p>
-                    <div class="languages">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="project-list">
-                    <img src="images/menubar.png">
-                    <h3>Menu</h3>
-                    <p>An interactive navigation menu that changes color or style when scrolled or when hovering over a menu item.</p>
-                    <div class="languages">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="project-list">
-                    <img src="images/unizulu.jpg">
-                    <h3>University Student Assistance</h3>
-                    <p>A tool to help students manage schedules, resources, and communications.</p>
-                    <div class="languages">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                    <div class="cert-info">
+                        <h3>PL-300</h3>
+                        <p>Microsoft Power BI Data Analyst Associate</p>
+                        <span>Microsoft</span>
                     </div>
                 </div>
 
@@ -159,27 +145,94 @@
         </div>
     </div>
 
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-title pro">Projects</h2>
 
-    <!-----------------------------Contact------------------------->
+            <div class="projects-container">
 
+                <div class="project-list featured">
+                    <div class="project-badge">Featured</div>
+                    <img src="images/hulamin_logo.jpg">
+                    <h3>Project Management System</h3>
+                    <p>Full-stack internal system for Hulamin ICT staff to create, track and manage projects. Includes Active Directory employee assignment, due date revision with full audit history, comments, and Power BI reporting dashboards.</p>
+                    <div class="languages">
+                        <p>C#</p>
+                        <p>ASP.NET Core</p>
+                        <p>Oracle SQL</p>
+                        <p>DevExpress</p>
+                        <p>Azure DevOps</p>
+                        <p>Power BI</p>
+                    </div>
+                </div>
+
+                <div class="project-list">
+                    <img src="images/unizulu.jpg">
+                    <h3>isiZulu NLP Dataset</h3>
+                    <p>Honours research project. Collected and preprocessed isiZulu text from public Facebook pages using Apify. Applied Python-based NLP techniques — cleaning, language detection, segmentation, and stopword filtering — to build datasets for low-resource African language LLM training.</p>
+                    <div class="languages">
+                        <p>Python</p>
+                        <p>NLP</p>
+                        <p>Apify</p>
+                        <p>Google Colab</p>
+                    </div>
+                </div>
+
+                <div class="project-list">
+                    <img src="images/Nike_sales.png">
+                    <h3>Nike Sales Analytics</h3>
+                    <p>Retail sales analytics project using Python and Pandas to clean, transform, and analyse a large Nike sales dataset. Identified regional performance, seasonal profit trends and top-performing products. Produced visual insights using Matplotlib.</p>
+                    <div class="languages">
+                        <p>Python</p>
+                        <p>Pandas</p>
+                        <p>Matplotlib</p>
+                        <p>Data Analysis</p>
+                    </div>
+                </div>
+
+                <div class="project-list">
+                    <img src="images/portfolio.png">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive personal portfolio website showcasing technical skills, projects, and professional information. Deployed on GitHub Pages.</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+
+                <div class="project-list">
+                    <img src="images/unizulu.jpg">
+                    <h3>University Student Assistance</h3>
+                    <p>Web-based student assistance system for academic scheduling and communication. Led the team as team leader, contributed frontend development and SQL database integration.</p>
+                    <div class="languages">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                        <p>SQL</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h2 class="sub-title">Contact Me</h2>
                     <p><i class="fa-solid fa-paper-plane"></i>lunganil804@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i>0793312671</p>
-
                     <div class="social-icons">
                         <a href="https://www.facebook.com/lungani.lurh.509"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://github.com/LunganiGcabashe"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/gcabashel/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://wa.me/27793312671
-                        "><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://wa.me/27793312671"><i class="fa-brands fa-square-whatsapp"></i></a>
                     </div>
-
-                    <a href="CV/CV_Lungani Gcabashe.pdf" download="" class="btn btn2" >Download CV</a>
+                    <a href="CV/Gcabashe_Lungani.pdf" download class="btn btn2">Download CV</a>
                 </div>
 
                 <div class="contact-right">
@@ -195,13 +248,10 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright @ Lungani. <i class="fa-solid fa-heart"></i>Responsice Portfolio</p>
+            <p>Copyright &copy; Lungani Gcabashe. Made with <i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
 
-
-
-    
     <script src="script.js"></script>
 </body>
 </html>
